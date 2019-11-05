@@ -275,7 +275,7 @@
 									"font": "Arial;13;0",
 									"left": 599,
 									"top": 399.5,
-									"width": 109.00439453125,
+									"width": 108,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFuGQmexvmqsI8="
@@ -673,7 +673,7 @@
 									"font": "Arial;13;0",
 									"left": 600.5,
 									"top": 495.5,
-									"width": 116.2216796875,
+									"width": 115,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFuGQ4VNPri30M="
@@ -1570,7 +1570,7 @@
 									"font": "Arial;13;0",
 									"left": 849.5,
 									"top": 655.5,
-									"width": 122.6962890625,
+									"width": 122,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFuGRCtjPw9+eI="
@@ -4754,7 +4754,7 @@
 										"$ref": "AAAAAAFuGRnPxQTW3DQ="
 									},
 									"edgePosition": 1,
-									"text": "found something"
+									"text": "found somethink"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5362,7 +5362,7 @@
 										"$ref": "AAAAAAFuGR6HOwYGbR8="
 									},
 									"edgePosition": 1,
-									"text": "Do you want serach more?"
+									"text": "Do you want search more?"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5795,7 +5795,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFuGRT91AOWujg="
 					},
-					"name": "found something",
+					"name": "found somethink",
 					"source": {
 						"$ref": "AAAAAAFuGRc5ygRBajU="
 					},
@@ -5877,7 +5877,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFuGRT91AOWujg="
 					},
-					"name": "Do you want serach more?",
+					"name": "Do you want search more?",
 					"source": {
 						"$ref": "AAAAAAFuGRfzTwR5sdI="
 					},
@@ -6361,23 +6361,6 @@
 									"subViews": [
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAFuGUMFOlNd7Y4=",
-											"_parent": {
-												"$ref": "AAAAAAFuGUJIhFMb8nk="
-											},
-											"model": {
-												"$ref": "AAAAAAFuGUMFD1NaLD0="
-											},
-											"font": "Arial;13;0",
-											"left": 1005,
-											"top": 282,
-											"width": 215,
-											"height": 13,
-											"text": "+addCheck()",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAFuGUM3DlNrXcs=",
 											"_parent": {
 												"$ref": "AAAAAAFuGUJIhFMb8nk="
@@ -6387,10 +6370,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1005,
-											"top": 297,
+											"top": 282,
 											"width": 215,
 											"height": 13,
-											"text": "+updateCheck()",
+											"text": "+addorUpdateExpense()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6404,10 +6387,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1005,
-											"top": 312,
+											"top": 297,
 											"width": 215,
 											"height": 13,
-											"text": "+removeOperation()",
+											"text": "+deleteExpense()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6421,7 +6404,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1005,
-											"top": 327,
+											"top": 312,
 											"width": 215,
 											"height": 13,
 											"text": "+getById()",
@@ -6438,10 +6421,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1005,
-											"top": 342,
+											"top": 327,
 											"width": 215,
 											"height": 13,
-											"text": "+getSumExpense()",
+											"text": "+getByMonthYear()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6455,10 +6438,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 1005,
-											"top": 357,
+											"top": 342,
 											"width": 215,
 											"height": 13,
-											"text": "+getSumForMonth()",
+											"text": "+getAll()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -6466,7 +6449,7 @@
 									"left": 1000,
 									"top": 277,
 									"width": 225,
-									"height": 98
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -6918,19 +6901,11 @@
 					"operations": [
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAFuGUMFD1NaLD0=",
-							"_parent": {
-								"$ref": "AAAAAAFuGUJIg1MSvE4="
-							},
-							"name": "addCheck"
-						},
-						{
-							"_type": "UMLOperation",
 							"_id": "AAAAAAFuGUM241NoMHI=",
 							"_parent": {
 								"$ref": "AAAAAAFuGUJIg1MSvE4="
 							},
-							"name": "updateCheck"
+							"name": "addorUpdateExpense"
 						},
 						{
 							"_type": "UMLOperation",
@@ -6938,7 +6913,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFuGUJIg1MSvE4="
 							},
-							"name": "removeOperation"
+							"name": "deleteExpense"
 						},
 						{
 							"_type": "UMLOperation",
@@ -6954,7 +6929,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFuGUJIg1MSvE4="
 							},
-							"name": "getSumExpense"
+							"name": "getByMonthYear"
 						},
 						{
 							"_type": "UMLOperation",
@@ -6962,7 +6937,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFuGUJIg1MSvE4="
 							},
-							"name": "getSumForMonth"
+							"name": "getAll"
 						}
 					]
 				}
